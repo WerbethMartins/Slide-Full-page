@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--JS-->
+    <script language="javascript" src="js.js"></script>
+    <!--Para desktop-->
+    <link rel="stylesheet" href="media-query.css"/> 
+    <title>Slide Full Page</title>
+</head>
+<body>
+    <!-- Navegação -->
+    <div id="navegacao"> 
+        <div class="area">
+            <img id="logo" src="img/Abstract-form.png" alt="">
+            <div id="menu">
+                <a href="#">AAAA |</a>
+                <a href="#">BBBB | </a>
+                <a href="#">CCCC</a>
+            </div>
+        </div>
+    </div> <!--Fim Navegação -->
+    
+    <div class="slideshow-container"> <!--Seção slide-->
+        <!-- slides -->
+        <div class="slide active">
+            <button class="btn-slide" href="#" >VER MAIS</button>
+            <img src="https://via.placeholder.com/1920x1080/ff7f7f/333333?text=Slide+1" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <button class="btn-slide" href="#" >VER MAIS</button> 
+            <img src="https://via.placeholder.com/1920x1080/7f7fff/333333?text=Slide+2" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <button class="btn-slide" href="#" >VER MAIS</button>
+            <img src="https://via.placeholder.com/1920x1080/7fff7f/333333?text=Slide+3" alt="Slide 3">
+        </div>
+
+        <!--Botões de navegação --> 
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a> 
+    </div>
+
+    <!-- Indicadores de navegação -->
+    <div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="content">
+            <p style="margin-left: 10px; height: 2px;"><a href="">Contato</a></p>
+            <p style="float: right;">© Criado por Werbeth Martins Sousa</p>
+        </div>  
+    </div>
+</body>
+</html>
