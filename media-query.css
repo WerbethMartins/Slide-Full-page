@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+
+@media print { /*Para impressoras*/
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Para TABLETS*/
+
+    /***********Formatação Menu************/
+#navegacao {
+    background: #000;
+    margin-top: 20px;
+    margin-left: 5em;
+    height: 60px;
+    width: 80%;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 1,2;
+}
+
+    /***********Formatação Slide************/
+
+    /* Configuração do botão do Slide */
+.btn-slide { 
+    width: 180px;
+    padding: 5px;
+    margin: 25em 22em !important;
+    padding: 10px;
+}
+
+    /* Formtação Indicadores  (Bolinhas)*/
+.dots {
+    display: none; /* Alterando a propriedade do display*/
+    position: absolute;
+    right: 20px; /* Colocando na lateral esquerda da tela */
+    top: 50%;
+    transform: translateY(-50%); /* Centralizando verticalmente */
+    flex-direction: column; /* Alinha os indicadores na vertical */
+}
+
+} /*Fim Media */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*Para DESKTOPS*/
+
+    /***********Formatação Menu************/
+#navegacao {
+    background: #000;
+    margin-top: 20px;
+    margin-left: 5em;
+    height: 60px;
+    width: 80%;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 1,2;
+}
+
+    /***********Formatação Slide************/
+
+    /* Configuração do botão do Slide */
+.btn-slide { 
+    width: 180px;
+    padding: 5px;
+    margin: 26em 30em !important;
+    padding: 10px;
+}
+
+} /*Fim Media */
+
+@media screen and (min-width: 1200px) { /*Para DESKTOPS*/
+
+    /***********Formatação Menu************/
+#navegacao {
+    background: #000;
+    margin-top: 20px;
+    margin-left: 7em;
+    height: 60px;
+    width: 80%;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 1,2;
+}
+
+    /***********Formatação Slide************/
+
+    /* Configuração do botão do Slide */
+.btn-slide { 
+    border-radius: 5px;
+    width: 180px;
+    padding: 5px;
+    margin: 26em 41em !important;
+    padding: 10px;
+}
+} /*Fim Media */
